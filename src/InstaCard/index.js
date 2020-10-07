@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react';  //親コンポーネント
 import Header from './Header';
 import Body from './Body';
 import ThemeSwitcher from './ThemeSwitcher';
@@ -19,6 +19,8 @@ export default class extends Component {
       themeが'dark'なら'insta-card insta-card-dark'と
       クラス名が変わるようにします。
     */
+    let instaCard = 'insta-card';
+
     return (
       <div className="card-wrapper">
         <ThemeSwitcher  />
