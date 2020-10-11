@@ -34,7 +34,7 @@ export default class extends Component {
           theme = {theme}
           switchTheme = {this.onSwitchTheme}
         />
-        <article className="insta-card">
+        <article className = {instaCard}>
           <Header />
           <Body />
         </article>

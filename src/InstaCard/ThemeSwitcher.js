@@ -1,4 +1,5 @@
 import React from 'react';
+import PropsTypes from 'prop-types';
 
 const ThemeSwitcher = ({ theme, switchTheme }) => (
   <ul className="theme-swither">
@@ -20,5 +21,14 @@ const ThemeSwitcher = ({ theme, switchTheme }) => (
     </li>
   </ul>
 );
+
+ThemeSwitcher.defaultProps = {
+  theme: 'light',  
+}
+
+ThemeSwitcher.propTypes = {
+  theme:'',
+  switchTheme:'',
+}
 
 export default ThemeSwitcher;
