@@ -1,4 +1,5 @@
 import React from 'react';
+import PropsTypes from 'prop-types';
 
 const Comment = ({ username, comment }) => (
   <li className="poster-comment">
@@ -10,5 +11,15 @@ const Comment = ({ username, comment }) => (
     </span>
   </li>
 );
+
+Comment.defaultProps = {
+  username: 'testuser',
+  comment: 'コメントする',  
+}
+
+Comment.propTypes = {
+  username: PropsTypes.string.isRequired,
+  comment: PropsTypes.string.isRequired,
+}
 
 export default Comment;

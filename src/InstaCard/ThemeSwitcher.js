@@ -27,8 +27,8 @@ ThemeSwitcher.defaultProps = {
 }
 
 ThemeSwitcher.propTypes = {
-  theme:'',
-  switchTheme:'',
+  theme: PropsTypes.string.isRequired,
+  switchTheme: PropsTypes.func.isRequired,
 }
 
 export default ThemeSwitcher;
