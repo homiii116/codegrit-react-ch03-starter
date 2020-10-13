@@ -1,5 +1,5 @@
 import React from 'react';
-import PropsTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 const ThemeSwitcher = ({ theme, switchTheme }) => (
   <ul className="theme-swither">
@@ -27,8 +27,8 @@ ThemeSwitcher.defaultProps = {
 }
 
 ThemeSwitcher.propTypes = {
-  theme: PropsTypes.string.isRequired,
-  switchTheme: PropsTypes.func.isRequired,
+  theme: PropTypes.string.isRequired,
+  switchTheme: PropTypes.func.isRequired,
 }
 
 export default ThemeSwitcher;
